@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   background-color: #252525;
 }
@@ -6,6 +12,14 @@ header h1.navbar-brand {
 }
 header h1.navbar-brand:hover {
   color: #fff;
+}
+header .nav-link {
+  color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+header .nav-link:hover {
+  color: #cccccc;
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,14 +1,25 @@
-$mainColor: #252525;
-$mainTextColor: #fff;
+@use 'config/reset';
+@use 'config/variables';
+
 
 header{
-    background-color: $mainColor;
+    background-color: variables.$mainColor;
     
     h1.navbar-brand{
-        color: $mainTextColor;
+        color: variables.$mainTextColor;
 
         &:hover{
-            color: $mainTextColor;
+            color: variables.$mainTextColor;
+        }
+    }
+
+    .nav-link{
+        color: variables.$mainTextColor;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover{
+            color: darken($color: variables.$mainTextColor, $amount: 20%);
+            transform: scale(1.1);
         }
     }
 }
