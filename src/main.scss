@@ -1,0 +1,14 @@
+$mainColor: #252525;
+$mainTextColor: #fff;
+
+header{
+    background-color: $mainColor;
+    
+    h1.navbar-brand{
+        color: $mainTextColor;
+
+        &:hover{
+            color: $mainTextColor;
+        }
+    }
+}
