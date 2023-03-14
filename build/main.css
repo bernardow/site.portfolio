@@ -35,6 +35,11 @@ section {
   padding: 3em 0;
 }
 
+#about img {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
 #about .social-links {
   justify-content: center;
   display: flex;
