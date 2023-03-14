@@ -1,25 +1,68 @@
 @use 'config/reset';
 @use 'config/variables';
+@use 'config/mixins';
 
+body{
+    background-color: variables.$mainTextColor;
+}
 
 header{
     background-color: variables.$mainColor;
     
     h1.navbar-brand{
         color: variables.$mainTextColor;
+        font-family: variables.$headerFont;
 
         &:hover{
             color: variables.$mainTextColor;
         }
     }
 
-    .nav-link{
-        color: variables.$mainTextColor;
-        transition: transform 0.2s ease-in-out;
-
-        &:hover{
-            color: darken($color: variables.$mainTextColor, $amount: 20%);
-            transform: scale(1.1);
+    .nav{
+        .nav-link{
+            @include mixins.navLinkStyle();
+    
+            &.active{
+                background-color: variables.$headerActiveColor;
+            }
         }
     }
+    
+}
+
+section{
+    padding: 3em 0;
+}
+
+#tech{
+    .nav{
+        .nav-link{
+            @include mixins.navLinkStyle(variables.$mainColor);
+            &.active{
+                background-color: variables.$secondaryColor;
+                color: variables.$mainTextColor;
+            }
+        }
+    }
+}
+
+#about{
+    .social-links{
+        justify-content: center;
+        display: flex;
+        margin-top: 2em;
+
+        a{
+            text-decoration: none;
+            color: variables.$mainColor;
+            padding: 8px;
+            border-radius: 5px;
+            border: 2px solid variables.$mainColor;
+            @include mixins.navLinkStyle(variables.$mainColor);
+        }
+    } 
+}
+
+.card{
+    @include mixins.navLinkStyle(variables.$mainColor);
 }

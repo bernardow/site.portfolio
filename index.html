@@ -7,6 +7,9 @@
     <title>Bernardo - Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/main.css">
 </head>
 <body>
@@ -40,7 +43,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#game-projects">
                                 <i class="bi bi-unity"></i>
                                 Games
                             </a>
@@ -51,7 +54,7 @@
         </div>
     </header>
     <main data-bs-spy="scroll" data-bs-target="#header" data-bs-smooth-scroll="true">
-        <section class="pt-5 pb-5" id="about">
+        <section id="about">
             <div class="container">
                 <div class="row">
                     <h2 class="text-center">Sobre Mim</h2>
@@ -65,11 +68,22 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod commodi numquam eum eligendi sapiente fugiat sequi cum velit. Praesentium, inventore! Vitae, a? Autem doloremque quas odio soluta, excepturi optio quae.
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex voluptates iusto repellat vitae libero! At quia incidunt sint exercitationem eum, accusantium mollitia, aspernatur, facilis tenetur cum minus ipsam quos ullam.
                         </p>
+                        <div class="social-links">
+                            <a href="#">
+                                <i class="bi bi-linkedin"></i>
+                                Linkedin
+                            </a>
+                            <span class="ms-1 me-1"></span>
+                            <a href="#">
+                                <i class="bi bi-github"></i>
+                                Github
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="tech" class="pt-5 pb-5">
+        <section id="tech">
             <div class="container">
                 <div class="row">
                     <h2 class="text-center">Tecnologias</h2>
@@ -128,54 +142,97 @@
                 </div>
             </div>
         </section>
-        <section id="web-projects" class="pt-5 pb-5">
+        <section id="web-projects">
             <div class="container">
                 <div class="row">
                     <h2 class="text-center">Projetos Web</h2>
                 </div>
                 <div class="row mt-5">
-                    <div class="col-md-4">
+                    <div class="col-md-4 mt-3 mt-md-0">
                         <div class="card">
                             <button type="button" data-bs-toggle="collapse" data-bs-target="#card-text-1" class="border-0">
                                 <img class="w-100" src="https://via.placeholder.com/320x320" alt="">
                             </button>
-                            <div class="card-body">
+                            <div class="card-body collapse" id="card-text-1">
                                 <h3 class="h4">Bee'Aware</h3>
-                                <div id="card-text-1" class="collapse">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores blanditiis a explicabo voluptate mollitia! Incidunt esse reiciendis quibusdam, sit nulla saepe ad sed? Adipisci consequuntur, facilis expedita minus optio aperiam!
-                                    </p>
-                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores blanditiis a explicabo voluptate mollitia! Incidunt esse reiciendis quibusdam, sit nulla saepe ad sed? Adipisci consequuntur, facilis expedita minus optio aperiam!
+                                </p>
+                                <a href="https://youtube.com" target="_blank" class="btn btn-success">Me conheça</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mt-3 mt-md-0">
                         <div class="card">
                             <button type="button" data-bs-toggle="collapse" data-bs-target="#card-text-2" class="border-0">
                                 <img class="w-100" src="https://via.placeholder.com/320x320" alt="">
                             </button>
-                            <div class="card-body">
+                            <div id="card-text-2" class="card-body collapse">
                                 <h3 class="h4">Portfolio</h3>
-                                <div id="card-text-2" class="collapse">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores blanditiis a explicabo voluptate mollitia! Incidunt esse reiciendis quibusdam, sit nulla saepe ad sed? Adipisci consequuntur, facilis expedita minus optio aperiam!
-                                    </p>
-                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores blanditiis a explicabo voluptate mollitia! Incidunt esse reiciendis quibusdam, sit nulla saepe ad sed? Adipisci consequuntur, facilis expedita minus optio aperiam!
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mt-3 mt-md-0">
                         <div class="card">
                             <button type="button" data-bs-toggle="collapse" data-bs-target="#card-text-3" class="border-0">
                                 <img class="w-100" src="https://via.placeholder.com/320x320" alt="">
                             </button>
-                            <div class="card-body">
-                                <h3 class="h4">Guitar Clash</h3>
-                                <div id="card-text-3" class="collapse">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores blanditiis a explicabo voluptate mollitia! Incidunt esse reiciendis quibusdam, sit nulla saepe ad sed? Adipisci consequuntur, facilis expedita minus optio aperiam!
-                                    </p>
-                                </div>
+                            <div id="card-text-3" class="card-body collapse">
+                                <h3 class="h4">Guitar Clash</h3>                        
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores blanditiis a explicabo voluptate mollitia! Incidunt esse reiciendis quibusdam, sit nulla saepe ad sed? Adipisci consequuntur, facilis expedita minus optio aperiam!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="game-projects">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center">Projetos de Jogos</h2>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4 mt-3 mt-md-0">
+                        <div class="card">
+                            <button type="button" class="border-0" data-bs-toggle="collapse" data-bs-target="#game-description-1">
+                                <img src="https://via.placeholder.com/320x320" class="w-100" alt="">
+                            </button>
+                            <div id="game-description-1" class="card-body collapse">
+                                <h3>Time Remission</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eius porro neque. Eveniet, veritatis illo beatae molestias libero labore architecto consectetur inventore similique tempore nesciunt doloremque perferendis vel quae fugiat?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3 mt-md-0">
+                        <div class="card">
+                            <button type="button" class="border-0" data-bs-toggle="collapse" data-bs-target="#game-description-2">
+                                <img src="https://via.placeholder.com/320x320" class="w-100" alt="">
+                            </button>
+                            <div id="game-description-2" class="card-body collapse">
+                                <h3>Time Remission</h3>                        
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eius porro neque. Eveniet, veritatis illo beatae molestias libero labore architecto consectetur inventore similique tempore nesciunt doloremque perferendis vel quae fugiat?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3 mt-md-0">
+                        <div class="card">
+                            <button type="button" class="border-0" data-bs-toggle="collapse" data-bs-target="#game-description-3">
+                                <img src="https://via.placeholder.com/320x320" class="w-100" alt="">
+                            </button>
+                            <div id="game-description-3" class="card-body collapse">
+                                <h3>Time Remission</h3>                                
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eius porro neque. Eveniet, veritatis illo beatae molestias libero labore architecto consectetur inventore similique tempore nesciunt doloremque perferendis vel quae fugiat?
+                                </p>
                             </div>
                         </div>
                     </div>
