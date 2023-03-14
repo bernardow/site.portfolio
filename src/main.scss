@@ -18,6 +18,10 @@ header{
         }
     }
 
+    .navbar-toggler-icon{
+        mix-blend-mode: plus-lighter;
+    }
+
     .nav{
         .nav-link{
             @include mixins.navLinkStyle();
@@ -35,7 +39,6 @@ section{
 }
 
 #about{
-
     img{
         width: 80%;
         display: flex;
