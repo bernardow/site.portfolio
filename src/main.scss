@@ -34,18 +34,6 @@ section{
     padding: 3em 0;
 }
 
-#tech{
-    .nav{
-        .nav-link{
-            @include mixins.navLinkStyle(variables.$mainColor);
-            &.active{
-                background-color: variables.$secondaryColor;
-                color: variables.$mainTextColor;
-            }
-        }
-    }
-}
-
 #about{
     .social-links{
         justify-content: center;
@@ -59,10 +47,37 @@ section{
             border-radius: 5px;
             border: 2px solid variables.$mainColor;
             @include mixins.navLinkStyle(variables.$mainColor);
+
+            &:hover{
+                background-color: variables.$mainColor;
+                color: variables.$mainTextColor;
+            }
         }
     } 
 }
 
+#tech{
+    .nav{
+        .nav-link{
+            @include mixins.navLinkStyle(variables.$mainColor);
+            &.active{
+                background-color: variables.$secondaryColor;
+                color: variables.$mainTextColor;
+            }
+        }
+    }
+}
+
 .card{
-    @include mixins.navLinkStyle(variables.$mainColor);
+    @include mixins.navLinkStyle(variables.$mainColor, 1.05);
+
+    img{
+        border-radius: 3px;
+    }
+
+    .card-links{
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
 }

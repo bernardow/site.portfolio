@@ -1,11 +1,11 @@
 @use 'variables';
 
-@mixin navLinkStyle($textColor: variables.$mainTextColor, $highlightColor: $textColor){
+@mixin navLinkStyle($textColor: variables.$mainTextColor, $scale: 1.1){
     color: $textColor;
     transition: transform 0.2s ease-in-out;
 
     &:hover{
-        color: darken($color: $highlightColor, $amount: 20%);
-        transform: scale(1.1);
+        color: darken($color: $textColor, $amount: 20%);
+        transform: scale($scale);
     }
 }
