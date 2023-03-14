@@ -19,6 +19,9 @@ header h1.navbar-brand {
 header h1.navbar-brand:hover {
   color: #efefe9;
 }
+header .navbar-toggler-icon {
+  mix-blend-mode: plus-lighter;
+}
 header .nav .nav-link {
   color: #efefe9;
   transition: transform 0.2s ease-in-out;
