@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass" : "sass src/main.scss build/main.css",
+    "sass": "sass src/main.scss build/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "sass": "^1.59.2"
+  "devDependencies": {
+    "sass": "^1.59.3"
   }
 }
